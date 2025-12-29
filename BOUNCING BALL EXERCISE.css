@@ -1,0 +1,39 @@
+.box
+{
+    background-color: rgb(9, 195, 220);
+width: 95vw;
+height: 95vh;
+margin: 0px;
+padding: 0px;
+position: relative;
+
+}
+.contaionor
+{
+
+background-color: red;
+height: 70px;
+width: 70px;
+border-radius: 50px;
+position: absolute;
+bottom: 0px;
+animation:animateX 3s alternate infinite,animateY 1s ease-out infinite alternate ;
+}
+@keyframes animateX
+{
+    from{
+    left:0;
+    }
+    to{
+left:100%;
+    }
+}
+@keyframes animateY
+{
+    from{
+ bottom: 0;
+    }
+    to{
+bottom: 100%;
+    }
+}
